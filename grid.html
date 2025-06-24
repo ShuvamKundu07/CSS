@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            border:4px solid blue;
+            display: grid;
+            grid-template-columns: 120px 100px;   /*(col,col) duto columns hbe*/
+            grid-template-rows: 100px 100px 100px;
+            grid-template-areas: "nav nav nav"
+                                 "side article article"
+                                 "footer footer lol ";
+            gap: 30px;
+
+        }
+        .item{
+            border: 3px solid black; 
+        }
+        .item-1{
+            grid-area: nav;
+            background-color: aqua;
+            /* transform: rotate(50deg); */
+            /* scale: 1.8; */
+            /* transform: skew(5deg);    z axis e skew property use hbe na */
+            /* transform: translate(34px); */
+        }
+        .item-2{
+            grid-area: side;
+            background-color: rgb(28, 133, 49);
+        }
+        .item-3{
+            grid-area: article;
+            background-color: rgb(176, 142, 39);
+        }
+        .item-4{
+            grid-area: footer;
+            background-color: rgb(108, 27, 107);
+        }
+        .item-5{
+            grid-area: lol;
+            background-color: rgba(215, 55, 34, 0.782);
+        }
+    </style>
+</head>
+<body>
+    <dv class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </dv>
+</body>
+</html>
